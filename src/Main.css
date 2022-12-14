@@ -1,0 +1,92 @@
+
+.main .result {
+    display: flex;
+    /* align-items: center; */
+    gap: 40px;
+    max-width: 350px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+  }
+  .rps-div{
+    border: 2px solid whitesmoke;
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    padding-left:15px ;
+    padding-right:15px ;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 370px;
+    width: 100%;
+  }
+  .rps-div div{
+    background-color: whitesmoke;
+    width: 120px;
+    object-fit: contain;
+     /* height: 120px;  */
+     text-align: center;
+     margin-top: 20px;
+     line-height: 10px;
+     font-size: 30px;
+    border-radius: 10px;
+  }
+  .rps-div div p{
+    color: rgb(113, 12, 196);
+  }
+  
+ .paper{
+  border-radius: 170px;
+  padding: 20px;
+  border: 15px solid rgb(206, 203, 47);
+  background-color: white;
+  object-fit: cover;
+ }
+
+ .rock{
+  border-radius: 100px;
+  padding: 20px;
+  border: 15px solid rgb(241, 48, 48);
+  background-color: white;
+ }
+ .main h1{
+  color: white;
+ }
+ .main p{
+  color: white;
+ }
+
+ .btn1{
+  height: 53px;
+  width: 60%;
+    max-width: 330px;
+  /* min-width: %; */
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+ }
+ .btn2{
+  height: 50px;
+  width:50% ;
+  max-width: 200px;
+  margin-top: 40px;
+  background-color: rgb(23, 23, 143);
+
+  color: white;
+  font-size: 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 9px;
+  
+ }
+ .link{
+  text-decoration: none;
+  color: white;
+ }
+
+ .restext{
+  color: green;
+ }
