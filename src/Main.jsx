@@ -24,15 +24,15 @@ const Main = () => {
     console.log(personal);
     console.log(computer);
 
-    if (personal == computer ) {
-      if (Data.score ==20 && Data.com <20){
+    if (personal === computer ) {
+      if (Data.score ===20 && Data.com <20){
         alert('you won in the final');
-      } else if(Data.com ==20 && Data.score <20){
+      } else if(Data.com ===20 && Data.score <20){
             alert ('computer won in d final')
 
       }
 
-      if (personal == "rock") {
+      if (personal === "rock") {
         setData({ ...Data, img1: rock, img2: rock, resultText: "it is a tie" });
       } else if (personal == "paper") {
         setData({
@@ -41,7 +41,7 @@ const Main = () => {
           img2: paper,
           resultText: "it is a tie",
         });
-      } else if (personal == "scissors") {
+      } else if (personal === "scissors") {
         setData({
           ...Data,
           img1: scissors,
@@ -49,7 +49,7 @@ const Main = () => {
           resultText: "it is a tie",
         });
       }
-    } else if (personal == "paper" && computer == "rock") {
+    } else if (personal === "paper" && computer === "rock") {
       setData({
         ...Data,
         score: Data.score + 1,
@@ -57,7 +57,7 @@ const Main = () => {
         img2: rock,
         resultText: "you win",
       });
-    } else if (personal == "scissors" && computer == "paper") {
+    } else if (personal === "scissors" && computer === "paper") {
       setData({
         ...Data,
         score: Data.score + 1,
@@ -65,7 +65,7 @@ const Main = () => {
         img2: paper,
         resultText: "you win",
       });
-    } else if (personal == "rock" && computer == "scissors") {
+    } else if (personal === "rock" && computer === "scissors") {
       setData({
         ...Data,
         score: Data.score + 1,
@@ -74,7 +74,7 @@ const Main = () => {
         resultText: "you win",
       });
     } //STARTS
-    else if (personal == "rock" && computer == "paper") {
+    else if (personal === "rock" && computer === "paper") {
       setData({
         ...Data,
         com:Data.com +1,
@@ -83,7 +83,7 @@ const Main = () => {
         resultText: "computer won",
       });
       
-    } else if (personal == "paper" && computer == "scissors") {
+    } else if (personal === "paper" && computer === "scissors") {
       setData({
         ...Data,
          com: Data.com + 1,
@@ -91,7 +91,7 @@ const Main = () => {
         img2: scissors,
         resultText: "computer won",
       });
-    }else if (personal == "scissors" && computer == "rock" ) {
+    }else if (personal === "scissors" && computer === "rock" ) {
       setData({
         ...Data,
         // score: Data.score - 1,
