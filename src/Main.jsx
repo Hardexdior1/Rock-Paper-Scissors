@@ -9,27 +9,32 @@ const Main = () => {
     img1: rock,
     img2: paper,
     score: 0,
-    com:0,
+    com: 0,
     // alert:'welcome'
     // resultText,
   });
+  const [text, setText] = useState("");
+  const [zero, setZero] = useState("");
 
   let rps = ["rock", "paper", "scissors"];
+  // console.log(rps[1]);
+  // let ans =rps.filter(name=>name.includes('o') &&name.length>4)
+  // console.log(ans);
 
   let handlePlay = () => {
     let randomeNuber1 = Math.floor(Math.random() * 3);
     let personal = rps[randomeNuber1];
+
     let randomeNuber2 = Math.floor(Math.random() * 3);
     let computer = rps[randomeNuber2];
     console.log(personal);
     console.log(computer);
 
-    if (personal === computer ) {
-      if (Data.score ===20 && Data.com <20){
-        alert('you won in the final');
-      } else if(Data.com ===20 && Data.score <20){
-            alert ('computer won in d final')
-
+    if (personal === computer) {
+      if (Data.score === 20 && Data.com < 20) {
+        alert("you won in the final");
+      } else if (Data.com === 20 && Data.score < 20) {
+        alert("computer won in d final");
       }
 
       if (personal === "rock") {
@@ -40,6 +45,7 @@ const Main = () => {
           img1: paper,
           img2: paper,
           resultText: "it is a tie",
+          setText: "computer choose dog",
         });
       } else if (personal === "scissors") {
         setData({
@@ -77,55 +83,55 @@ const Main = () => {
     else if (personal === "rock" && computer === "paper") {
       setData({
         ...Data,
-        com:Data.com +1,
+        com: Data.com + 1,
         img1: rock,
         img2: paper,
         resultText: "computer won",
       });
-      
     } else if (personal === "paper" && computer === "scissors") {
       setData({
         ...Data,
-         com: Data.com + 1,
+        com: Data.com + 1,
         img1: paper,
         img2: scissors,
         resultText: "computer won",
       });
-    }else if (personal === "scissors" && computer === "rock" ) {
+    } else if (personal === "scissors" && computer === "rock") {
       setData({
         ...Data,
         // score: Data.score - 1,
         img1: scissors,
         img2: rock,
         resultText: "computer won",
-        com:Data.com+1,
+        com: Data.com + 1,
+        zero: 0,
       });
     }
-      
+
     // ENDS
     else {
       setData({
         ...Data,
-        score: Data.score + 1 ,
+        score: Data.score + 1,
         img1: rock,
         img2: scissors,
-        resultText: "you win", 
+        resultText: "you win",
       });
     }
   };
 
   return (
-    
     <div className="main">
-      <div><marquee behavior="normal" direction="left">Game By Hardexdior</marquee></div>
       <div className="rps-div">
-        <h1>
-          ROCK <br /> PAPER SCISSORS
-        </h1>
-        <div>
-          <p> ur score</p>
+        <div className="rock-div">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+        </div>
+        <div className="Scores-div">
+          <p> your scores</p>
           <p>{Data.score}</p>
-          <p>compt <br /> <br /> score</p>
+          <p>computer scores</p>
           <p>{Data.com}</p>
         </div>
       </div>
@@ -137,6 +143,7 @@ const Main = () => {
         <div>
           <img className="paper" src={Data.img2} alt="" />
           <p>Computer Picked</p>
+          <p>{text}</p>
         </div>
       </div>
 
@@ -159,6 +166,7 @@ const Main = () => {
           Rules
         </a>{" "}
       </button>
+     
     </div>
   );
 };

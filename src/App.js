@@ -1,6 +1,7 @@
 
 import './App.css';
 import Main from './Main';
+// import Practice from './practice';
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
 
  
      <Main />
+     {/* <Practice /> */}
     </div>
   );
 }

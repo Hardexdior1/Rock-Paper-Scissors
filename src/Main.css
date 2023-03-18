@@ -6,38 +6,37 @@
     max-width: 350px;
     width: 80%;
     margin: 0 auto;
-    color: white;
     font-size: 25px;
+  }
+  .main{
+    border: 1px solid bisque;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .rps-div{
     border: 2px solid whitesmoke;
     display: flex;
-    margin: 0 auto;
-    gap: 40px;
-    padding-left:15px ;
-    padding-right:15px ;
-    margin-bottom: 10px;
-    vertical-align: middle;
+    gap: 20px;
+    justify-content: space-evenly;
     text-align: left;
-    justify-content: space-between;
-    max-width: 370px;
-    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+
   }
-  .rps-div div{
-    background-color: whitesmoke;
-    width: 120px;
-    object-fit: contain;
-     /* height: 120px;  */
-     text-align: center;
-     margin-top: 20px;
-     line-height: 10px;
-     font-size: 30px;
-    border-radius: 10px;
+  .Scores-div{
+background-color: #fff;
+padding: 10px;     
+border-radius: 10px;
+border: 1px solid grey;
   }
-  .rps-div div p{
-    color: rgb(113, 12, 196);
+   .Scores-div p{
+    color: purple;
   }
-  
+ 
  .paper{
   border-radius: 170px;
   padding: 20px;
@@ -46,6 +45,10 @@
   object-fit: cover;
  }
 
+ .result p{
+  color: rgb(29, 235, 10);
+ }
+ 
  .rock{
   border-radius: 100px;
   padding: 20px;
@@ -55,9 +58,7 @@
  .main h1{
   color: white;
  }
- .main p{
-  color: white;
- }
+ 
 
  .btn1{
   height: 53px;
@@ -68,6 +69,9 @@
   border: none;
   border-radius: 9px;
   font-size: 15px;
+ }
+ .btn1:active{
+  background-color: aqua;
  }
  .btn2{
   height: 50px;
@@ -89,4 +93,7 @@
 
  .restext{
   color: green;
+ }
+ .Href{
+  color: red;
  }
